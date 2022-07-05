@@ -1,0 +1,110 @@
+
+@media (max-width: 576px) {
+    .header {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+}
+body::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(147, 147, 245);
+    z-index: -1;
+    background-image: linear-gradient(115deg,rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+    url(images/survey-form-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+#description {
+    letter-spacing: 1.5px;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+#survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    padding: 5rem 8rem;
+    margin: 0px 10%;
+    border-radius: 5px;
+}
+
+@media (max-width:1078px) {
+    #survey-form {
+        padding: 2.5rem 2rem;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-prompt {
+    color: #eee;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input,
+#dropdown {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.radio-recommend, .places {
+    display: inline-block;
+    margin: 5px 16px;
+    min-height: 1.25rem;
+    min-width: 1.2rem;
+}
+
+#comments {
+    font-size: 17px;
+    font-family: arial;
+    padding: 20px 0 0 20px;
+}
+
+.comment {
+    margin-top: 20px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 18px;
+    margin: 50px 0;
+    background-color: #37af65;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
